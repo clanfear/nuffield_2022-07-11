@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>The Promise and Perils of the Sharing Economy</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Chuck Lanfear Dave Kirk" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
+    <link rel="stylesheet" href="nuff-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, top, title-slide
+
+.title[
+# The Promise and Perils of the Sharing Economy
+]
+.subtitle[
+## The Impact of Airbnb Lettings on Crime
+]
+.author[
+### Chuck Lanfear<br>Dave Kirk
+]
+.date[
+### July 11th, 2022
+]
+
+---
+
+
+
+
+# The Growth of Airbnb
+
+
+.image-90[
+![](img/guardian_airbnb_growth.png)
+]
+
+.footnote[Source: [Sherwood (2019) *The Guardian*](https://www.theguardian.com/technology/2019/may/05/airbnb-homelessness-renting-housing-accommodation-social-policy-cities-travel-leisure)]
+
+???
+
+Everyone knows about Airbnb; how many people here have stayed at an Airbnb? Rented one out?
+
+Airbnb and the rest of the short-term rental market has reached a scale where it is having impacts on cities.
+
+---
+# Housing Markets
+
+Barron et al. (2020, p. 45):
+
+&gt; To summarize the state of the literature on home-sharing, research (including this paper) has found that **home-sharing (1) raises local rental rates** by causing a reallocation of the housing stock, (2) **raises house prices** through both the capitalization of rents and the increased ability to use excess capacity...
+
+???
+
+The most well-recognized effects are on housing markets as properties are reallocated away from long-term uses, driving prices up for both renters and buyers.
+
+
+
+---
+# Disorder
+
+.image-90[
+![](img/observer_party.png)
+]
+.footnote[Source: [Lazzaro (2017) *The Observer*](https://observer.com/2017/03/airbnb-nda-damage-in-london-after-drug-party/)]
+
+---
+# Destabilization
+
+.image-90[
+![](img/guardian_1_in_4.png)
+]
+
+.footnote[Source: [Kommenda et al. (2020) *The Guardian*](https://www.theguardian.com/technology/2020/feb/20/revealed-the-areas-in-the-uk-with-one-airbnb-for-every-four-homes)]
+
+---
+class: inverse
+background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("img/london_street.jpg")
+background-size: cover
+
+# Criminological Theory
+
+## and Airbnb
+
+
+---
+# Routine Activity Theory
+
+![](./img/routine_activity.svg)
+
+
+* Crime is the results of criminal .bam[opportunity]
+
+* Anything that creates opportunities will increase crime
+
+  * This occurs *rapidly*
+
+---
+# Airbnb and Routine Activity
+
+* Guests as *likely offenders*
+
+   * More prone to anti-social behaviour
+
+--
+
+* Guests as *suitable targets*
+
+   * Often away from residence (e.g., assault, robbery)
+   * Less aware of and averse to risky situations
+   * Recognizable as high-value targets
+--
+
+* Guests as *incapable guardians*
+
+   * Less attached to neighborhood
+   * Unfamiliar with residents and local norms
+   * Often away from residence (e.g., burglary)
+
+--
+
+.centernote[These are stronger for *entire properties* than *spare rooms*.]
+
+---
+# Social Disorganization
+
+
+
+![](./img/social_disorganization.svg)
+
+
+* Strong neighborhood institutions reduce crime by promoting .bam[social control]
+
+* Destabilizing social structures increases crime by reducing social control
+
+   * This usually occurs *slowly*
+
+---
+## Airbnb and Social Disorganization
+
+Entire properties replace longer-term residents with *very* short-term ones
+
+* Reduces attachment to neighbourhood
+* Inhibits network formation
+* Weakens institutions
+
+--
+
+Spare rooms *add* short-term residents:
+
+* Less disruptive
+* May promote stability with additional income
+
+---
+# Broken Windows
+
+.image-75[
+![](./img/broken_windows.svg)
+]
+
+* Disorder signals criminal opportunity
+
+* Social control impedes crime and disorder
+
+* Fear of crime causes withdrawal and destabilization, reducing social control
+
+
+???
+
+Reciprocal relationships between social control and disorder and crime
+
+Some forms of social disorder may escalate into crime; drinking can turn into fighting
+
+Disorder may drive residents out of neighborhood
+
+---
+# Airbnb and Broken Windows
+
+Airbnb income may enable property rehabilitation
+
+* Remediation of seriously disorderly properties reduces crime
+
+--
+
+Airbnb activity increases property values
+
+* Increases tax base, incentives for social control, and police attention
+
+--
+
+Airbnb activity may generate disorder
+
+* Escalates into more serious crime (opportunity)
+* Reduces attachment to neighborhood and induces move-outs (destabilization)
+
+--
+
+.centernote[*Will mainly focus on routine activity and social disorganization today*]
+
+---
+# Causal Model
+
+We encode these theories into a causal model
+
+.image-280[
+![](slides_files/figure-html/theory-dag-1.svg)&lt;!-- --&gt;
+]
+
+.pull-left[
+* **A**irbnbs
+* **C**rime
+]
+.pull-right[
+* **O**pportunity
+* **S**ocial control capacity
+* **U**nobservables (time stable)
+]
+
+
+---
+# Hypotheses
+
+1. Airbnb properties are positively related to crime
+
+2. Entire properties will be more strongly related to crime than rooms
+
+3. Airbnb activity will be negatively related to collective efficacy
+
+4. The association between Airbnb activity and crime is partly mediated by collective efficacy
+
+---
+class: inverse
+background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("img/london.jpg")
+background-size: cover
+
+# The Setting
+
+---
+# Airbnb and London
+
+* One of the most popular Airbnb markets
+
+  * \&gt; 100,000 listings in a year&lt;sup&gt;1&lt;/sup&gt;
+  * 20% of surveyed households hosted in past year&lt;sup&gt;2&lt;/sup&gt;
+  * \&gt;=% 10% of dwellings are Airbnbs in some districts&lt;sup&gt;3&lt;/sup&gt;
+
+.footnote[
+[1] Temperton 2020; [2] MHCLH 2019; [3] Kommenda et al., 2020
+]
+
+--
+
+* Recent policies promote Airbnb usage
+
+  * Deregulation Act 2015
+
+      * Permits 90 days of main residence renting per year
+
+  * 2016 "Rent a Room" tax allowance
+
+      * Increased from £4,250 to £7,500 
+
+???
+
+Our project focuses on London, one of the most popular Airbnb markets in the world.
+
+---
+# Data
+
+.pull-left[
+* .bam[Airbnb properties] from *AirDNA* via CDRC
+
+   * Nov 2014 - May 2018
+   * Property-month observations
+   * Property type
+   * Geolocation
+   
+
+]
+.pull-right[
+
+
+
+]
+
+---
+count: false
+
+# Data
+
+.pull-left[
+* .bam[Airbnb properties] from *AirDNA* via CDRC
+
+   * Nov 2014 - May 2018
+   * Property-month observations
+   * Property type
+   * Geolocation
+   
+]
+.pull-right[
+
+
+* .bam[Collective efficacy] from *MOPAC Public Attitudes Survey*
+
+   * Apr 2015 - Dec 2018
+   * Ordinal indicators for:
+      * Cohesion and trust (4)
+      * Control expectations (3)
+   * LSOA and ward IDs
+
+]
+
+---
+count: false
+
+# Data
+
+.pull-left[
+* .bam[Airbnb properties] from *AirDNA* via CDRC
+
+   * Nov 2014 - May 2018
+   * Property-month observations
+   * Property type
+   * Geolocation
+   
+
+* Police-recorded .bam[crime] from *data.london.gov.uk* and *data.police.uk*
+  * 6 crime types
+  * Anonymized geolocation or LSOA ID
+]
+.pull-right[
+
+
+* .bam[Collective efficacy] from *MOPAC Public Attitudes Survey*
+
+   * Apr 2015 - Dec 2018
+   * Ordinal indicators for:
+      * Cohesion and trust (4)
+      * Control expectations (3)
+   * LSOA and ward IDs
+
+]
+
+---
+count: false
+
+# Data
+
+.pull-left[
+* .bam[Airbnb properties] from *AirDNA* via CDRC
+
+   * Nov 2014 - May 2018
+   * Property-month observations
+   * Property type
+   * Geolocation
+   
+
+* Police-recorded .bam[crime] from *data.london.gov.uk* and *data.police.uk*
+  * 6 crime types
+  * Anonymized geolocation or LSOA ID
+]
+.pull-right[
+
+
+* .bam[Collective efficacy] from *MOPAC Public Attitudes Survey*
+
+   * Apr 2015 - Dec 2018
+   * Ordinal indicators for:
+      * Cohesion and trust (4)
+      * Control expectations (3)
+   * LSOA and ward IDs
+
+* Not shown today:
+
+   * Property sale records
+   * Airbnb usage estimates
+   * PAS perceived crime
+   * Premier League games
+   * Policy instruments
+]
+
+---
+
+&lt;img src="slides_files/figure-html/map-1.png" width="720px" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+&lt;img src="slides_files/figure-html/pop-map-1.png" width="720px" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse
+background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("img/house_party.jpg")
+background-size: cover
+
+# Airbnb and Crime
+
+---
+# The Model Again
+
+.image-280[
+![](slides_files/figure-html/theory-dag-2-1.svg)&lt;!-- --&gt;
+]
+
+.pull-left[
+* **A**irbnbs
+* **C**rime
+]
+.pull-right[
+* **O**pportunity
+* **S**ocial control capacity
+* **U**nobservables (time stable)
+]
+
+--
+
+.centernote[*If concerned only with A → C, this simplifies*]
+
+---
+# Simplified Model
+
+.image-280[
+![](slides_files/figure-html/model-dag-1.svg)&lt;!-- --&gt;
+]
+
+.pull-left[
+* **A**irbnbs
+* **C**rime
+]
+.pull-right[
+* ~~**O**pportunity~~
+* ~~**S**ocial control capacity~~
+* **U**nobservables (time stable)
+]
+
+
+--
+
+.centernote[*This is a type of cross-lagged panel model*]
+
+---
+# Units of Analysis
+
+Given our model, how should we aggregate data?
+
+--
+
+&amp;zwj;Space:
+
+* Opportunity is local
+* Don't care about collective efficacy
+
+--
+
+&amp;zwj;Time:
+
+* Want to avoid Airbnb and crime simultaneity
+* Want to capture causal effect timing
+   * Opportunity is fast
+   * Social control is slow
+* Short periods complicate estimation
+
+--
+
+&amp;zwj;Unit: **LSOA-quarters**
+
+---
+# Method: ML-SEM
+
+Maximum Likelihood Fixed Effects Cross-Lagged Structural Equation Model (ML-SEM)&lt;sup&gt;1&lt;/sup&gt;
+
+* Asymptotically equivalent to Arellano-Bond&lt;sup&gt;2&lt;/sup&gt;
+
+  * Addresses time-stable confounders
+  * Autoregressive parameter
+
+* Better finite sample performance
+
+.footnote[
+[1] Allison et al. (2017)
+[2] Arellano &amp; Bond (1991)
+]
+
+
+--
+
+* Disadvantages:
+
+  * Gaussian errors only
+  * *Really hates skew*
+  * Infeasible when T is large
+
+
+---
+# ML-SEM Specification
+
+
+.pull-left60[
+.image-100[
+![](slides_files/figure-html/sem-dag-1.svg)&lt;!-- --&gt;
+]
+]
+
+.pull-right30[
+
+Outcome (Ct):
+* LSOA-quarter crime counts
+
+&amp;zwj;Features:
+
+* Airbnb effects:
+  * .electric[Contemporaneous]
+  * .rose[Lagged]
+* .pine[Fixed effects]
+* .burgundy[Autoregression]
+* .cobalt[Predetermined regressors]
+]
+
+---
+
+&lt;img src="slides_files/figure-html/quarter-results-1.png" width="600px" style="display: block; margin: auto;" /&gt;
+
+---
+# Property Types
+
+Both theories suggest effects should be concentrated in *entire homes and apartments*
+
+--
+
+Respecify model with disaggregated measures:
+
+* Entire Homes and Apartments
+
+* Private Rooms
+
+* Shared Rooms
+
+---
+
+&lt;img src="slides_files/figure-html/property-results-1.png" width="600px" style="display: block; margin: auto;" /&gt;
+
+---
+# Summary
+
+
+Airbnb activity predicts instrumental crimes
+
+* Consistent with routine activity
+* Less consistent with social disorganization
+
+--
+
+Mainly contemporaneous effects
+
+* Consistent with routine activity
+* Inconsistent with social disorganization
+
+--
+
+Association is limited to entire homes and apartments
+
+* Consistent with both theories
+
+
+---
+class: inverse
+background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("img/onion_airbnb.jpg"), linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
+background-size: 100%, 50%, 100%
+background-position: center, center, center
+
+# Airbnb and Collective Efficacy
+
+---
+# Yet Again
+
+.image-280[
+![](slides_files/figure-html/theory-dag-3-1.svg)&lt;!-- --&gt;
+]
+
+.pull-left[
+* **A**irbnbs
+* **C**rime
+]
+.pull-right[
+* **O**pportunity
+* **S**ocial control capacity
+* **U**nobservables (time stable)
+]
+
+--
+
+.centernote[*This time we care about S*]
+
+---
+# Simplified Again
+
+.image-280[
+![](slides_files/figure-html/ce-dag-1.svg)&lt;!-- --&gt;
+]
+
+.pull-left[
+* **A**irbnbs
+* **C**rime
+]
+.pull-right[
+* ~~**O**pportunity~~
+* **S**ocial control capacity
+* **U**nobservables (time stable)
+]
+
+.centernote[*Now we need a collective efficacy measurement*]
+
+---
+# Measuring Collective Efficacy
+
+Collective efficacy is a community-level .bam[latent variable]
+
+* Survey respondents act as *informants*
+
+--
+
+Assume informant responses to collective efficacy indicators are a mix of:
+
+* Latent variable we want to measure
+* Non-systematic (random) measurement error
+* Systematic perceptual error of individuals
+
+--
+
+Validity of measurement rests on .bam[reliability], a function of:
+
+* Agreement between informants
+* **Number of informants in each neighborhood**
+
+--
+
+.centernote[*We need to remove measurement error and estimate reliability*]
+
+
+---
+## Multilevel Measurement Model
+
+.image-75[
+![](img/measurement_model.svg)
+]
+
+---
+count: false
+## Stage 1
+
+.image-75[
+![](img/measurement_model_cfa.svg)
+]
+
+.centernote[*Purge measurement error, obtain individual estimate*]
+
+---
+count: false
+## Stage 2
+
+.image-75[
+![](img/measurement_model_hlm.svg)
+]
+
+.centernote[*Adjust for composition, obtain neighborhood estimate*]
+
+---
+# Units of Analysis
+
+Given our models, how should we aggregate data?
+
+--
+
+&amp;zwj;Space:
+
+* Some theoretical debate over social control spatial scale
+* Many respondents needed for reliable measurement
+
+--
+
+&amp;zwj;Time:
+
+* Social control effects are slow
+* Changes in social control capacity may be even slower
+* Many respondents needed for reliable measurement
+
+--
+
+&amp;zwj;Unit: **Ward-years**
+
+* High CE reliability: 0.71
+* Few zeroes but high skew in crime
+
+---
+# Specification
+
+.footnote[[1] All covariances hidden for legibility]
+
+.pull-left60[
+.image-100[
+![](slides_files/figure-html/sem-dag-2-1.svg)&lt;!-- --&gt;
+
+Secondary models:
+
+  * C 
+
+]
+]
+
+.pull-right30[
+
+Outcome (Ct):
+* **Logged** Ward-year crime counts
+
+Features:
+
+* Airbnb and CE:
+  * .electric[Contemporaneous]
+  * .rose[Lagged]
+* .pine[Fixed effects]
+* .burgundy[Autoregression]
+* Predetermined regressors&lt;sup&gt;1&lt;/sup&gt;
+]
+
+---
+
+&lt;img src="slides_files/figure-html/year-results-1.png" width="600px" style="display: block; margin: auto;" /&gt;
+
+---
+# Airbnb and Collective Efficacy
+
+How is Airbnb activity related to collective efficacy?
+
+* Estimate both sides of Airbnb and CE cross-lagged model
+
+--
+
+&lt;img src="slides_files/figure-html/abnb-ce-results-1.png" width="600px" style="display: block; margin: auto;" /&gt;
+
+---
+# Summary
+
+Weak collective efficacy effects
+
+   * Inconsistent with social disorganization
+
+--
+
+Weaker but persistent Airbnb effects
+
+   * Inconsistent with social disorganization
+   * More consistent with routine activity
+      * Opportunity is contemporaneous and local
+
+--
+
+Airbnb activity may reduce collective efficacy over time
+
+
+---
+class: inverse
+background-image: linear-gradient(to right, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("img/oxford_houses.jpg")
+background-size: cover
+
+# Discussion
+
+---
+# Key Results
+
+* Airbnb activity strongly associated with robbery, burglary, and theft
+   
+   * Some association with violence
+
+--
+
+* Effects appear operate in short-term
+
+   * Suggests opportunity as mechanism
+
+--
+
+* Effects driven by entire homes and apartments for rent
+
+--
+
+* Little evidence for mediation by collective efficacy
+
+  * Weak negative relationship with Airbnb
+  * Airbnb effects not attenuated when including collective efficacy
+
+---
+# Limitations
+
+* Omitted time-varying confounders
+
+  * Results insensitive to English Premier League games
+
+--
+
+* Effect heterogeneity
+
+  * Results insensitive to spatial clustering interaction
+
+--
+
+* Causal timing may be off
+
+  * Results similar from monthly Poisson FE
+
+--
+
+* Collective efficacy less time stable than expected
+
+   * Low indicator variation
+      * "Very likely" is modal response in 8/9 indicators
+   * May not be tapping social control capacity well
+
+--
+
+* Need a ML-SEM Poisson estimator
+
+---
+# Implications
+
+Private short-term letting is reshaping the urban landscape
+
+* Constraining rental markets
+* Increasing home prices
+* .bam[Compromising public safety]
+
+--
+
+Short-term letting is highly commercialized
+
+* Dominated by dedicated properties
+* Hosts with multiple properties
+
+--
+
+An externality problem
+
+* Benefits accrue to few property owners
+* Livability and affordability reduced for all
+
+--
+
+.centernote[*Policymakers should revisit short-term letting market incentives and regulation*]
+
+---
+class: inverse
+# Thank You
+
+---
+count:false
+class: inverse
+# Appendix
+
+
+
+---
+count:false
+
+
+&lt;template id="790679f9-cfb0-4bfc-ba28-e87b3934f23d"&gt;&lt;style&gt;
+.tabwid table{
+  border-spacing:0px !important;
+  border-collapse:collapse;
+  line-height:1;
+  margin-left:auto;
+  margin-right:auto;
+  border-width: 0;
+  display: table;
+  margin-top: 1.275em;
+  margin-bottom: 1.275em;
+  border-color: transparent;
+}
+.tabwid_left table{
+  margin-left:0;
+}
+.tabwid_right table{
+  margin-right:0;
+}
+.tabwid td {
+    padding: 0;
+}
+.tabwid a {
+  text-decoration: none;
+}
+.tabwid thead {
+    background-color: transparent;
+}
+.tabwid tfoot {
+    background-color: transparent;
+}
+.tabwid table tr {
+background-color: transparent;
+}
+&lt;/style&gt;&lt;div class="tabwid"&gt;&lt;style&gt;.cl-0416dab0{}.cl-0404f0ac{font-family:'Arial';font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-0404f0c0{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-04051a00{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:0.5pt;padding-top:0.5pt;padding-left:0.5pt;padding-right:0.5pt;line-height: 1;background-color:transparent;}.cl-04051a0a{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:0.5pt;padding-top:0.5pt;padding-left:0.5pt;padding-right:0.5pt;line-height: 1;background-color:transparent;}.cl-0405a3b2{width:43.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-0405a3bc{width:216pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-0405a3c6{width:43.2pt;background-color:rgba(229, 229, 229, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-0405a3c7{width:216pt;background-color:rgba(229, 229, 229, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-0405a3d0{width:43.2pt;background-color:rgba(229, 229, 229, 1.00);vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-0405a3da{width:216pt;background-color:rgba(229, 229, 229, 1.00);vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-0405a3e4{width:43.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-0405a3e5{width:43.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-0405a3ee{width:216pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}&lt;/style&gt;&lt;table class='cl-0416dab0'&gt;&lt;thead&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td  colspan="8"class="cl-0405a3bc"&gt;&lt;p class="cl-04051a00"&gt;&lt;span class="cl-0404f0ac"&gt;MOPAC PAS: Collective Efficacy&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-0405a3ee"&gt;&lt;p class="cl-04051a00"&gt;&lt;span class="cl-0404f0ac"&gt;Measure&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3e5"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;Mean&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3e5"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;Median&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3e5"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;Min&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3e5"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;Max&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3e5"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;Sd&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3e5"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;Missing&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3e5"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;Missing Pct&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-0405a3bc"&gt;&lt;p class="cl-04051a00"&gt;&lt;span class="cl-0404f0ac"&gt;People act with courtesy to each other in public space in this area.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;3.85&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;4.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;5.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;0.79&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;217&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;0.45&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-0405a3c7"&gt;&lt;p class="cl-04051a00"&gt;&lt;span class="cl-0404f0ac"&gt;... this local area is a place where people from different backgrounds get on well together.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;3.27&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;3.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;4.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;0.66&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;798&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1.66&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-0405a3bc"&gt;&lt;p class="cl-04051a00"&gt;&lt;span class="cl-0404f0ac"&gt;If I sensed trouble whilst in this area, I could get help from people who live here.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;3.82&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;4.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;5.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;0.84&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1,014&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;2.11&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-0405a3c7"&gt;&lt;p class="cl-04051a00"&gt;&lt;span class="cl-0404f0ac"&gt;You can see from the public space here in the area that people take pride in their environment.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;3.69&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;4.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;5.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;0.93&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;437&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;0.91&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-0405a3bc"&gt;&lt;p class="cl-04051a00"&gt;&lt;span class="cl-0404f0ac"&gt;People in this neighbourhood can be trusted.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;3.81&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;4.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;5.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;0.81&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;701&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1.46&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-0405a3c7"&gt;&lt;p class="cl-04051a00"&gt;&lt;span class="cl-0404f0ac"&gt;The people who live here can be relied upon to call the police if someone is acting suspiciously.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;3.93&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;4.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;5.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;0.81&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1,149&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3c6"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;2.39&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-0405a3bc"&gt;&lt;p class="cl-04051a00"&gt;&lt;span class="cl-0404f0ac"&gt;Local people/residents and authorities have control over the public space in this area.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;3.66&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;4.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;5.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;0.93&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;2,553&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3b2"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;5.31&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-0405a3da"&gt;&lt;p class="cl-04051a00"&gt;&lt;span class="cl-0404f0ac"&gt;If any of the children or young people around here are causing trouble, local people will tell them off.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3d0"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;3.17&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3d0"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;3.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3d0"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3d0"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;5.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3d0"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1.13&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3d0"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;1,491&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-0405a3d0"&gt;&lt;p class="cl-04051a0a"&gt;&lt;span class="cl-0404f0ac"&gt;3.10&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;tfoot&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td  colspan="8"class="cl-0405a3bc"&gt;&lt;p class="cl-04051a00"&gt;&lt;span class="cl-0404f0c0"&gt;N = 48,093&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;&lt;/table&gt;&lt;/div&gt;&lt;/template&gt;
+&lt;div class="flextable-shadow-host" id="350a7a6c-f688-4b81-ab42-0af133982a51"&gt;&lt;/div&gt;
+&lt;script&gt;
+var dest = document.getElementById("350a7a6c-f688-4b81-ab42-0af133982a51");
+var template = document.getElementById("790679f9-cfb0-4bfc-ba28-e87b3934f23d");
+var caption = template.content.querySelector("caption");
+if(caption) {
+  caption.style.cssText = "display:block;text-align:center;";
+  var newcapt = document.createElement("p");
+  newcapt.appendChild(caption)
+  dest.parentNode.insertBefore(newcapt, dest.previousSibling);
+}
+var fantome = dest.attachShadow({mode: 'open'});
+var templateContent = template.content;
+fantome.appendChild(templateContent);
+&lt;/script&gt;
+
+---
+count:false
+
+
+&lt;template id="e2b69f8f-3b7c-4157-bb8b-a37fea5bc2ec"&gt;&lt;style&gt;
+.tabwid table{
+  border-spacing:0px !important;
+  border-collapse:collapse;
+  line-height:1;
+  margin-left:auto;
+  margin-right:auto;
+  border-width: 0;
+  display: table;
+  margin-top: 1.275em;
+  margin-bottom: 1.275em;
+  border-color: transparent;
+}
+.tabwid_left table{
+  margin-left:0;
+}
+.tabwid_right table{
+  margin-right:0;
+}
+.tabwid td {
+    padding: 0;
+}
+.tabwid a {
+  text-decoration: none;
+}
+.tabwid thead {
+    background-color: transparent;
+}
+.tabwid tfoot {
+    background-color: transparent;
+}
+.tabwid table tr {
+background-color: transparent;
+}
+&lt;/style&gt;&lt;div class="tabwid"&gt;&lt;style&gt;.cl-ba08c2c4{}.cl-b9ff2ea8{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-b9ff4e9c{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:1pt;padding-top:1pt;padding-left:1pt;padding-right:1pt;line-height: 1;background-color:transparent;}.cl-b9ff4ea6{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:1pt;padding-top:1pt;padding-left:1pt;padding-right:1pt;line-height: 1;background-color:transparent;}.cl-b9ff9af0{width:288pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b9ff9afa{width:54pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b9ff9afb{width:288pt;background-color:rgba(229, 229, 229, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b9ff9afc{width:54pt;background-color:rgba(229, 229, 229, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b9ff9b04{width:54pt;background-color:rgba(229, 229, 229, 1.00);vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b9ff9b0e{width:288pt;background-color:rgba(229, 229, 229, 1.00);vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b9ff9b0f{width:54pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-b9ff9b10{width:288pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}&lt;/style&gt;&lt;table class='cl-ba08c2c4'&gt;&lt;thead&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td  colspan="2"class="cl-b9ff9af0"&gt;&lt;p class="cl-b9ff4e9c"&gt;&lt;span class="cl-b9ff2ea8"&gt;MOPAC PAS: Factor Loadings&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-b9ff9b10"&gt;&lt;p class="cl-b9ff4e9c"&gt;&lt;span class="cl-b9ff2ea8"&gt;Indicator&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-b9ff9b0f"&gt;&lt;p class="cl-b9ff4ea6"&gt;&lt;span class="cl-b9ff2ea8"&gt;Estimate&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-b9ff9af0"&gt;&lt;p class="cl-b9ff4e9c"&gt;&lt;span class="cl-b9ff2ea8"&gt;People act with courtesy to each other in public space in this area.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-b9ff9afa"&gt;&lt;p class="cl-b9ff4ea6"&gt;&lt;span class="cl-b9ff2ea8"&gt;1.000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-b9ff9afb"&gt;&lt;p class="cl-b9ff4e9c"&gt;&lt;span class="cl-b9ff2ea8"&gt;... this local area is a place where people from different backgrounds get on well together.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-b9ff9afc"&gt;&lt;p class="cl-b9ff4ea6"&gt;&lt;span class="cl-b9ff2ea8"&gt;0.673&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-b9ff9af0"&gt;&lt;p class="cl-b9ff4e9c"&gt;&lt;span class="cl-b9ff2ea8"&gt;If I sensed trouble whilst in this area, I could get help from people who live here.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-b9ff9afa"&gt;&lt;p class="cl-b9ff4ea6"&gt;&lt;span class="cl-b9ff2ea8"&gt;0.941&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-b9ff9afb"&gt;&lt;p class="cl-b9ff4e9c"&gt;&lt;span class="cl-b9ff2ea8"&gt;You can see from the public space here in the area that people take pride in their environment.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-b9ff9afc"&gt;&lt;p class="cl-b9ff4ea6"&gt;&lt;span class="cl-b9ff2ea8"&gt;0.942&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-b9ff9af0"&gt;&lt;p class="cl-b9ff4e9c"&gt;&lt;span class="cl-b9ff2ea8"&gt;People in this neighbourhood can be trusted.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-b9ff9afa"&gt;&lt;p class="cl-b9ff4ea6"&gt;&lt;span class="cl-b9ff2ea8"&gt;0.979&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-b9ff9afb"&gt;&lt;p class="cl-b9ff4e9c"&gt;&lt;span class="cl-b9ff2ea8"&gt;The people who live here can be relied upon to call the police if someone is acting suspiciously.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-b9ff9afc"&gt;&lt;p class="cl-b9ff4ea6"&gt;&lt;span class="cl-b9ff2ea8"&gt;0.855&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-b9ff9af0"&gt;&lt;p class="cl-b9ff4e9c"&gt;&lt;span class="cl-b9ff2ea8"&gt;Local people/residents and authorities have control over the public space in this area.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-b9ff9afa"&gt;&lt;p class="cl-b9ff4ea6"&gt;&lt;span class="cl-b9ff2ea8"&gt;0.769&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-b9ff9b0e"&gt;&lt;p class="cl-b9ff4e9c"&gt;&lt;span class="cl-b9ff2ea8"&gt;If any of the children or young people around here are causing trouble, local people will tell them off.&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-b9ff9b04"&gt;&lt;p class="cl-b9ff4ea6"&gt;&lt;span class="cl-b9ff2ea8"&gt;0.658&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/template&gt;
+&lt;div class="flextable-shadow-host" id="35bdc73c-5185-4ee1-a202-323586e23b98"&gt;&lt;/div&gt;
+&lt;script&gt;
+var dest = document.getElementById("35bdc73c-5185-4ee1-a202-323586e23b98");
+var template = document.getElementById("e2b69f8f-3b7c-4157-bb8b-a37fea5bc2ec");
+var caption = template.content.querySelector("caption");
+if(caption) {
+  caption.style.cssText = "display:block;text-align:center;";
+  var newcapt = document.createElement("p");
+  newcapt.appendChild(caption)
+  dest.parentNode.insertBefore(newcapt, dest.previousSibling);
+}
+var fantome = dest.attachShadow({mode: 'open'});
+var templateContent = template.content;
+fantome.appendChild(templateContent);
+&lt;/script&gt;
+
+---
+count:false
+
+
+&lt;template id="d037702b-128d-4c19-9a28-6bc8875e47b0"&gt;&lt;style&gt;
+.tabwid table{
+  border-spacing:0px !important;
+  border-collapse:collapse;
+  line-height:1;
+  margin-left:auto;
+  margin-right:auto;
+  border-width: 0;
+  display: table;
+  margin-top: 1.275em;
+  margin-bottom: 1.275em;
+  border-color: transparent;
+}
+.tabwid_left table{
+  margin-left:0;
+}
+.tabwid_right table{
+  margin-right:0;
+}
+.tabwid td {
+    padding: 0;
+}
+.tabwid a {
+  text-decoration: none;
+}
+.tabwid thead {
+    background-color: transparent;
+}
+.tabwid tfoot {
+    background-color: transparent;
+}
+.tabwid table tr {
+background-color: transparent;
+}
+&lt;/style&gt;&lt;div class="tabwid"&gt;&lt;style&gt;.cl-03b9e13e{}.cl-03a72198{font-family:'Arial';font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-03a721ac{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-03a752c6{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:1pt;padding-right:1pt;line-height: 1;background-color:transparent;}.cl-03a752da{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:1pt;padding-right:1pt;line-height: 1;background-color:transparent;}.cl-03a752db{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:0;padding-top:0;padding-left:0;padding-right:0;line-height: 1;background-color:transparent;}.cl-03a752e4{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:0;padding-top:0;padding-left:0;padding-right:0;line-height: 1;background-color:transparent;}.cl-03a752e5{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-03a82ef8{width:64.8pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-03a82f0c{width:72pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-03a82f16{width:14.4pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-03a82f17{width:72pt;background-color:rgba(229, 229, 229, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-03a82f20{width:64.8pt;background-color:rgba(229, 229, 229, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-03a82f21{width:14.4pt;background-color:rgba(229, 229, 229, 1.00);vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-03a82f2a{width:72pt;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-03a82f2b{width:64.8pt;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-03a82f34{width:14.4pt;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-03a82f35{width:64.8pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-03a82f36{width:64.8pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-03a82f3e{width:72pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-03a82f48{width:14.4pt;background-color:transparent;vertical-align: middle;border-bottom: 0.5pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}&lt;/style&gt;&lt;table class='cl-03b9e13e'&gt;&lt;thead&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td  colspan="9"class="cl-03a82f16"&gt;&lt;p class="cl-03a752c6"&gt;&lt;span class="cl-03a72198"&gt;MOPAC PAS: Sociodemographics&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f48"&gt;&lt;p class="cl-03a752c6"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f3e"&gt;&lt;p class="cl-03a752c6"&gt;&lt;span class="cl-03a72198"&gt;Measure&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f36"&gt;&lt;p class="cl-03a752da"&gt;&lt;span class="cl-03a72198"&gt;Mean&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f36"&gt;&lt;p class="cl-03a752da"&gt;&lt;span class="cl-03a72198"&gt;Median&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f36"&gt;&lt;p class="cl-03a752da"&gt;&lt;span class="cl-03a72198"&gt;Min&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f36"&gt;&lt;p class="cl-03a752da"&gt;&lt;span class="cl-03a72198"&gt;Max&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f36"&gt;&lt;p class="cl-03a752da"&gt;&lt;span class="cl-03a72198"&gt;Sd&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f36"&gt;&lt;p class="cl-03a752da"&gt;&lt;span class="cl-03a72198"&gt;Missing&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f36"&gt;&lt;p class="cl-03a752da"&gt;&lt;span class="cl-03a72198"&gt;Missing Pct&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f16"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f0c"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f16"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f0c"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Age&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;3.64&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;3.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;6.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.66&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;149&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.31&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f21"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f17"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Homeowner&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.46&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.50&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1,026&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;2.13&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f16"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f0c"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Male&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.46&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.50&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;56&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.12&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f21"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f17"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Tenure&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;5.17&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;6.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;8.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;2.24&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;44&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.09&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f16"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f0c"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Victim&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.10&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.30&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;22&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.05&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td  colspan="9"class="cl-03a82f16"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Employment&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f16"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f0c"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;House Person&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.07&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.25&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;297&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.62&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f21"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f17"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Not Working&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.06&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.23&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;297&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.62&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f16"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f0c"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Other&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.01&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.11&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;297&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.62&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f21"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f17"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Retired&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.22&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.42&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;297&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.62&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f16"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f0c"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Student/Education&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.06&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.24&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;297&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.62&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f21"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f17"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Unemployed&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.02&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.14&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;297&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.62&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f16"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f0c"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Working Ft&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.43&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.49&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;297&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.62&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f21"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f17"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Working Pt&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.13&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.34&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;297&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.62&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td  colspan="9"class="cl-03a82f16"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Race&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f16"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f0c"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Asian&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.16&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.37&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;608&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.26&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f21"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f17"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Black&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.12&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.33&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;608&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.26&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f16"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f0c"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;Other&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.06&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.24&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;608&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82ef8"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.26&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f21"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f17"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;White British&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.46&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.50&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;608&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f20"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.26&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-03a82f34"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f2a"&gt;&lt;p class="cl-03a752db"&gt;&lt;span class="cl-03a72198"&gt;White Other&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f2b"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.18&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f2b"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f2b"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f2b"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.00&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f2b"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;0.39&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f2b"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;608&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-03a82f2b"&gt;&lt;p class="cl-03a752e4"&gt;&lt;span class="cl-03a72198"&gt;1.26&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;tfoot&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td  colspan="9"class="cl-03a82f16"&gt;&lt;p class="cl-03a752e5"&gt;&lt;span class="cl-03a721ac"&gt;N = 48,093&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tfoot&gt;&lt;/table&gt;&lt;/div&gt;&lt;/template&gt;
+&lt;div class="flextable-shadow-host" id="a0cce456-682c-4e72-8d23-6494c9893777"&gt;&lt;/div&gt;
+&lt;script&gt;
+var dest = document.getElementById("a0cce456-682c-4e72-8d23-6494c9893777");
+var template = document.getElementById("d037702b-128d-4c19-9a28-6bc8875e47b0");
+var caption = template.content.querySelector("caption");
+if(caption) {
+  caption.style.cssText = "display:block;text-align:center;";
+  var newcapt = document.createElement("p");
+  newcapt.appendChild(caption)
+  dest.parentNode.insertBefore(newcapt, dest.previousSibling);
+}
+var fantome = dest.attachShadow({mode: 'open'});
+var templateContent = template.content;
+fantome.appendChild(templateContent);
+&lt;/script&gt;
+
+---
+count:false
+# References
+
+.small[
+Allison, P. D., Williams, R., &amp; Moral-Benito, E. (2017). Maximum Likelihood for Cross-lagged Panel Models with Fixed Effects. Socius: Sociological Research for a Dynamic World, 3, 237802311771057. https://doi.org/10.1177/2378023117710578&lt;br&gt;
+Arellano, M., &amp; Bond, S. (1991). Some Tests of Specification for Panel Data: Monte Carlo Evidence and an Application to Employment Equations. The Review of Economic Studies, 58(2), 277. https://doi.org/10.2307/2297968&lt;br&gt;
+Barron, K., Kung, E., &amp; Proserpio, D. (2021). The Effect of Home-Sharing on House Prices and Rents: Evidence from Airbnb. Marketing Science, 40(1), 23–47. https://doi.org/10.1287/mksc.2020.1227&lt;br&gt;
+Kommenda, N., Pidd, H., &amp; Brooks, L. (2020). Revealed: The areas in the UK with one Airbnb for every four homes. The Guardian.&lt;br&gt;
+Ministry of Housing, Communities &amp; Local Government (MHCLG). (2019). English housing survey: Private rented sector, 2017-2018. Ministry of Housing, Communities &amp; Local Government.&lt;br&gt;
+Temperton, J. (2020). Airbnb has devoured London - and here’s the data that proves it. Wired UK.
+
+Unsplash photos:
+
+[Title slide photo by Andrea Davis](https://unsplash.com/photos/NngNVT74o6s)&lt;br&gt;
+[House party photo by Jacob Bentzinger](https://unsplash.com/photos/_HXFz-0g9w8)&lt;br&gt;
+[Oxford houses by Toa Heftiba](https://unsplash.com/photos/nrSzRUWqmoI)&lt;br&gt;
+[London street by Tomek Baginski](https://unsplash.com/photos/SiGPM-HLYyk)&lt;br&gt;
+[London aerial photo by Benjamin Davies](https://unsplash.com/photos/Oja2ty_9ZLM)
+
+[Story from the Onion](https://www.theonion.com/whole-conversation-wasted-getting-to-know-new-neighbors-1849022517)
+
+
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "tomorrow-night-bright",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
